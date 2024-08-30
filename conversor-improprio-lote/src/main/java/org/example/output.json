@@ -1,0 +1,47 @@
+{
+    "regionalCode": 900,
+    "emissionDate": "2024-08-03",
+    "invoiceNumber": 221694,
+    "invoiceId": null,
+    "id": 828714,
+    "keyAccess": null,
+    "type": {
+        "description": "CAE CD",
+        "id": 2
+    },
+    "operatorCode": 3305120,
+    "branch": null,
+    "items": [{
+        "reason": {
+            "description": "Vencido/Venda suspensa",
+            "id": 6
+        },
+        "product": 22542,
+        "quantity": 10,
+        "dueDate": "2024-11-01",
+        "lotNumber": "PTD5751A",
+        "operatorCode": 3305120,
+        "valueCostRaia": 31.19,
+        "cdAddress": 11174,
+        "policyId": 212366,
+        "provider": 108191,
+        "policyDestination": {
+            "destination": {
+                "description": "Crossdocking",
+                "id": 2
+            },
+            "description": "Incineração com ressarcimento",
+            "id": 7
+        },
+        "invoiceNumberItem": 3,
+        "producer": 108191,
+        "invoiceId": 245008834348,
+        "id": 10590765,
+        "flLotIllegible": false,
+        "balanceId": 23625666
+    }],
+    "status": {
+        "description": "Concluído",
+        "id": 2
+    }
+}

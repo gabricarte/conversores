@@ -1,0 +1,81 @@
+{
+  "id": 828714,
+  "emissionDate": "2024-08-03",
+  "transferReason": {
+    "id": 6,
+    "description": "Vencido/Venda suspensa"
+  },
+  "regionalCode": 900,
+  "invoiceNumber": 221694,
+  "type": {
+    "id": 2,
+    "description": "CAE CD"
+  },
+  "status": {
+    "id": 2,
+    "description": "Concluído"
+  },
+  "operator": {
+    "code": 3305120,
+    "name": null,
+    "profileCode": null,
+    "email": null,
+    "regionalCode": null,
+    "disabled": false,
+    "registration": null
+  },
+  "items": [
+    {
+      "id": 10590765,
+      "product": 22542,
+      "quantity": 10,
+      "reason": {
+        "id": 6,
+        "description": "Vencido/Venda suspensa"
+      },
+      "breakdownReason": null,
+      "lotNumber": "PTD5751A",
+      "flLotIllegible": false,
+      "dueDate": "2024-11-01",
+      "policyDestination": {
+        "id": 7,
+        "description": "Incineração com ressarcimento",
+        "destination": {
+          "id": 2,
+          "description": "Crossdocking"
+        }
+      },
+      "cdAddress": 11174,
+      "balanceId": 23625666,
+      "invoiceId": 245008834348,
+      "invoiceNumberItem": 3,
+      "provider": 108191,
+      "producer": 108191,
+      "policyId": 212366,
+      "flLotValid": true,
+      "observation": "SEA.98*02/08",
+      "pharmacyId": null,
+      "invoiceStoreReverse": null,
+      "invoiceNumberLogistcsReverse": null,
+      "process": {
+        "id": 9,
+        "description": " "
+      },
+      "sector": {
+        "id": 51,
+        "description": "Separação - setor A"
+      },
+      "operator": {
+        "code": 3305120,
+        "name": null,
+        "profileCode": null,
+        "email": null,
+        "regionalCode": null,
+        "disabled": false,
+        "registration": null
+      },
+      "addressLegacy": null,
+      "valueCostRaia": 31.19
+    }
+  ]
+}
