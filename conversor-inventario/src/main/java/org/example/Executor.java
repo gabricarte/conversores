@@ -8,14 +8,15 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.LinkedHashMap;
 
 public class Executor {
     public static void main(String[] args) {
 
-        String folder = "C:\\projetos-spring\\conversor-inventario\\src\\main\\java\\org\\example\\";
+        String folder = "C:\\projetos-spring\\conversores\\conversor-inventario\\src\\main\\java\\org\\example\\";
 
         String inputFile = folder + "input.json";   // Nome do arquivo JSON de entrada
-        String outputFile = folder +  "output.json"; // Nome do arquivo JSON de saída
+        String outputFile = folder +  "output.json"; // Nome do arquivo JSON de saï¿½da
 
         try{
             FileReader reader = new FileReader(inputFile, StandardCharsets.ISO_8859_1);
@@ -23,8 +24,7 @@ public class Executor {
             JSONObject inputJson = new JSONObject(tokener);
             reader.close();
 
-            JSONObject outputJson = new JSONObject();
-
+            JSONObject outputJson = new JSONObject(new LinkedHashMap<>());
 
             if (inputJson.has("id")) {
                 outputJson.put("id", inputJson.getNumber("id"));
@@ -73,7 +73,7 @@ public class Executor {
                 JSONObject outputInternalObject = new JSONObject();
 
                 if (internalObject.has("id")) {
-                    outputInternalObject.put("id", getNumberValue(internalObject,"id"));
+                    outputInternalObject.put("cdStatusInven", getNumberValue(internalObject,"id"));
                 }
                 if (internalObject.has("description")) {
                     outputInternalObject.put("dsStatusInven", getStringValue(internalObject,"description"));
@@ -141,10 +141,10 @@ public class Executor {
                 outputJson.put("tbImproprioInvenProdutos", outputArray);
 
                 FileWriter writer = new FileWriter(outputFile, StandardCharsets.UTF_8);
-                writer.write(outputJson.toString(4)); // 4 é o nível de indentação para formatar o JSON
+                writer.write(outputJson.toString(4)); // 4 ï¿½ o nï¿½vel de indentaï¿½ï¿½o para formatar o JSON
                 writer.close();
 
-                System.out.println("Transformação concluída com sucesso!");
+                System.out.println("TransformaÃ§Ã£o concluÃ­da com sucesso!");
             }
 
         } catch(IOException e){
