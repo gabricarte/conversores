@@ -44,11 +44,12 @@ public class Executor {
                 outputJson.put("cdRegional", JSONObject.NULL);
             }
 
-            if (inputJson.has("cdLastProduct")) {
-                outputJson.put("cdUltimProdu", inputJson.getNumber("cdLastProduct"));
+            if (inputJson.has("cdLastProduct") && !inputJson.isNull("cdLastProduct")) {
+                outputJson.put("cdUltimProdu", getNumberValue(inputJson, "cdLastProduct"));
             } else {
                 outputJson.put("cdUltimProdu", JSONObject.NULL);
             }
+
 
             if (inputJson.has("dtOpened")) {
                 outputJson.put("dtAberturaInven", inputJson.getString("dtOpened"));
@@ -56,7 +57,7 @@ public class Executor {
                 outputJson.put("dtAberturaInven", JSONObject.NULL);
             }
 
-            if (inputJson.has("dtClosed")) {
+            if (inputJson.has("dtClosed") && !inputJson.isNull("dtClosed")) {
                 outputJson.put("dtEncerramInven", inputJson.getString("dtClosed"));
             } else {
                 outputJson.put("dtEncerramInven", JSONObject.NULL);
